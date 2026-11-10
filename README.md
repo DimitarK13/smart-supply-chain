@@ -8,6 +8,8 @@ This project aims to evaluate shipping performance, identify operational ineffic
 
 To obtain the data for this project, execute the download-data.py script found in scripts/. The data will get downloaded in data/raw/.
 
+To generate a data-quality profile of the raw data, run `python scripts/profile-data.py`. It writes `reports/data-profile.md`.
+
 ## Dataset
 
 - Source: Kaggle
@@ -34,7 +36,7 @@ To obtain the data for this project, execute the download-data.py script found i
 ## Project Structure
 
 ```text
-electricity-demand-pricing/
+smart-supply-chain/
 ├── data/           # Raw and processed datasets
 ├── notebooks/      # Data understanding, cleaning and EDA
 ├── reports/        # Project documentation and analytical report

@@ -7,5 +7,6 @@ plt.rcParams.update({
     'xtick.labelsize': 9,
     'ytick.labelsize': 9,
     'legend.fontsize': 9,
+    'legend.title_fontsize': 10,
     'figure.titlesize': 16
 })

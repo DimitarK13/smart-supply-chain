@@ -48,7 +48,7 @@ To answer these questions, the analysis will investigate five areas:
 
 ### B. Geographic Performance
 
-- Which markets, countries, or regions experience the highest delivery delay rates?
+- Which regions experience the highest delivery delay rates?
 - Are there geographical markets with consistently longer shipping times?
 - Are high-volume markets also experiencing poor shipping performance?
 - Which geographical areas should management prioritize?
@@ -134,7 +134,7 @@ Second Class is the least reliable shipping mode. It consistently has a high per
 
 ### B. Geographic Performance
 
-#### B1. Which markets, countries, or regions experience the highest delivery delay rates?
+#### B1. Which regions experience the highest delivery delay rates?
 
 #### B2. Are there geographical markets with consistently longer shipping times?
 

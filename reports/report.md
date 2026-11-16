@@ -134,13 +134,70 @@ Second Class is the least reliable shipping mode. It consistently has a high per
 
 ### B. Geographic Performance
 
+Source: `notebooks/04-geographic-performance-analysis.ipynb`
+
 #### B1. Which regions experience the highest delivery delay rates?
+
+The variability is low in delivery delay rates. The highest average delivery delay is 1.74 days, and the lowest is 1.53 days.
+
+- Central Asia: 1.74 days (102 values)
+- South of USA: 1.65 days (753 values)
+- Canada: 1.64 days (153 values)
+- South Asia: 1.64 days (1865 values)
+- Eastern Asia: 1.63 days (1818 values)
+
+It's worth noting that Central Asia has the least amount of orders, therefore the data might be noisy.
+
+![Average Delivery Delays by Region](../visualizations/average-delivery-delays-by-region.png)
 
 #### B2. Are there geographical markets with consistently longer shipping times?
 
+While investigating consistency in longer shipping times across different markets, the results that I got strongly suggest that the data is synthetic. Orders are divided into batches between markets, and only January 2017 has orders from all 5 markets at once. Therefore comparison of markets over time is **NOT** possible.
+
+For this reason, I took a different approach. Instead of comparing over time, I compared days for shipping across markets.
+
+The result that I got is quite interesting, and is another supporter of synthetic data. The data suggests that there is no difference in days for shipping across different markets. Below is the average days for shipping across markets:
+
+- Africa - 3.496612
+- Europe - 3.496650
+- LATAM - 3.500670
+- Pacific Asia - 3.511007
+- USCA - 3.496454
+
+The difference in average days for shipping across markets is: 0.015 days.
+
+![Average Days for Shipping Across Markets](../visualizations/days-for-shipping-across-markets.png)
+
 #### B3. Are high-volume markets also experiencing poor shipping performance?
 
+For this question I used two methods: late delivery risk per market and average days for shipping per market.
+
+Europe is the highest volume market (17763 orders), Africa the lowest (3689 orders).
+
+Late delivery risk indicates if sending is late or not, and it's almost identical between markets:
+
+- Late delivery risk in Pacific Asia: 57.68%
+- Late delivery risk in USCA: 57.52%
+- Late delivery risk in Europe: 57.42%
+- Late delivery risk in LATAM: 56.9%
+- Late delivery risk in Africa: 56.55%
+
+We already saw in Q2 that days for shipping per markets are almost identical, which suggests that shipping performance doesn't depend on the volume of a market.
+
+![Orders per Market](../visualizations/order-per-market.png)
+
 #### B4. Which geographical areas should management prioritize?
+
+Q1, Q2 and Q3 all answer questions about shipping and delivery in different markets/regions. For this question I wanted to explore more of the business weight: sales and profit in different markets.
+
+For this question I also calculated profit and sales for all items, not just per order.
+
+1. **Protect** Europe and LATAM. They bring the majority of the profit, so service problems there would cost the most.
+2. **Grow basket size** in Pacific Asia.
+3. **Lower priority** USCA and Africa. Their profit per order is good, but their volumes are smaller.
+4. **Bonus**: **Fix late deliveries globally**.
+
+![Share of Orders vs. Share of Profit by Market](../visualizations/orders-share-vs-profit-share-by-market.png)
 
 ### C. Product & Department Performance
 
@@ -181,6 +238,10 @@ Refer back to them (e.g. "see A2, A4") instead of repeating the numbers. -->
 
 ### 8.1 Which areas should management investigate first?
 
+Management should focus on minimizing delivery delays. Late delivery risk is similar between different markets (~57%), suggesting that it's not an issue of markets, but an issue of delivery.
+
+Management should also investigate why Pacific Asia has fewer items per order than other markets. Bundle promotions could be one way to boost more items per order.
+
 ### 8.2 Which shipping modes require attention?
 
 Second Class is probably the shipping mode that requires most attention. In A2, A3 and A4 we discovered that it is the least reliable shipping mode and has the highest average delivery delay.
@@ -188,6 +249,12 @@ Second Class is probably the shipping mode that requires most attention. In A2, 
 The lateness in First Class is probably an issue rather than real lateness, since it's always 1 day late and at 100% late shipment rate, 36 months in a row.
 
 ### 8.3 Which geographical markets have the biggest operational challenges?
+
+All markets suffer from the same operational challenge - late deliveries. In B3 we found that all markets have a similar percentage of late delivery risk (around 57%), no matter how big or small the volume of orders is.
+
+The market that management should prioritize is Pacific Asia. Orders contain fewer items than in other markets, and average items per order is directly tied to average profit per order.
+
+Europe and LATAM bring the majority of the profit, therefore protecting those markets is crucial.
 
 ### 8.4 Are there opportunities to improve profitability?
 

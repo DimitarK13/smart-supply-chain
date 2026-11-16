@@ -55,7 +55,7 @@ To answer these questions, the analysis will investigate five areas:
 
 ### C. Product & Department Performance
 
-- Which product categories generate the highest order volumes?
+- Which product categories sell the most units?
 - Do certain product categories experience higher delivery delay rates?
 - Which departments generate the most revenue and profit?
 - Are there departments with high sales but relatively low profitability?
@@ -201,7 +201,7 @@ For this question I also calculated profit and sales for all items, not just per
 
 ### C. Product & Department Performance
 
-#### C1. Which product categories generate the highest order volumes?
+#### C1. Which product categories sell the most units?
 
 #### C2. Do certain product categories experience higher delivery delay rates?
 

@@ -201,13 +201,56 @@ For this question I also calculated profit and sales for all items, not just per
 
 ### C. Product & Department Performance
 
+Source: `notebooks/05-product-and-department-analysis.ipynb`
+
 #### C1. Which product categories sell the most units?
+
+Answering this question was pretty straightforward - I grouped number of order items by product category. Besides getting just the raw number, to better understand the distribution, I also calculated the share of global sales per product category. Here are the results:
+
+1. Cleats: 23,514 items (13.61%)
+2. Men's Footwear: 21,263 (12.31%)
+3. Women's Apparel: 20,116 (11.64%)
+4. Indoor/Outdoor Games: 18,470 (10.69%)
+5. Fishing: 16,595 (9.61%)
+
+![Order Items per Product Category](../visualizations/order-items-per-product-category.png)
 
 #### C2. Do certain product categories experience higher delivery delay rates?
 
+To answer this question, I analysed two things:
+
+- I took the late delivery risk mean of each product category and compared it to the overall average
+- I looked at the average delivery delay in days for each product category
+
+The average late delivery risk of each category compared to the overall average suggested that there aren't any product categories that experience higher delivery delay rates. All categories being at most +5% and -8% away from the overall average.
+
+The average delivery delay in days showed similar results. The category with lowest delivery delay in days and the category with highest delivery delay in days have a difference of just 0.26 days on average.
+
+**With these two results, I am confident that there are no patterns in delivery delay rates for certain product categories.**
+
+![Late Delivery Rate by Product Category](../visualizations/late-delivery-rate-by-product-category.png)
+
 #### C3. Which departments generate the most revenue and profit?
 
+Answering this question was also straightforward, with very clear results. I calculated the profit and revenue by department:
+
+1. **Fan Shop:** Profit: $1,759,601; Revenue: $14,730,174
+2. **Apparel:** Profit: $845,530; Revenue: $6,858,959
+3. **Golf:** Profit: $476,329; Revenue: $3,962,014
+4. **Footwear:** Profit: $388,979; Revenue: $3,443,987
+5. **Outdoors:** Profit: $141,337; Revenue: $1,078,728
+
+The results for both profit and revenue align well for all departments. Which build directly on the last question.
+
+![Profit Distribution per Department](../visualizations/profit-distribution-per-department.png)
+
 #### C4. Are there departments with high sales but relatively low profitability?
+
+Having the answer to C3 in mind, there are no departments with high sales but low profitability. To make the answer clearer, I calculated the share of profit and revenue for each department.
+
+The highest difference in share of revenue and share of profit is in the Footwear department - 10.22% profit share; 10.88% revenue share; 0.66 percentage points difference.
+
+![Share of Revenue vs. Share of Profit by Department](../visualizations/revenue-share-vs-profit-share-by-department.png)
 
 ### D. Temporal Trends
 

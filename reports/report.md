@@ -254,13 +254,66 @@ The highest difference in share of revenue and share of profit is in the Footwea
 
 ### D. Temporal Trends
 
+Source: `notebooks/06-temporal-trends-analysis.ipynb`
+
 #### D1. How does order volume change over time?
+
+To answer this question, I calculated and graphed the amount of orders received each month throughout the dataset.
+
+The volume stays somewhat consistent throughout the first 33 months, but the last 4 months have a sudden spike in orders.
+
+- Average order volume first 33 months: 1662 orders per month
+- Average order volume last 4 months: 2010 orders per month
+
+![Orders Volume Over Time](../visualizations/orders-volume-over-time.png)
 
 #### D2. Are there seasonal or day-of-week patterns in delivery delays?
 
+For this question I calculated the delayed orders per:
+
+1. Day of week
+2. Per month
+
+##### Day of Week
+
+All days experience almost the same late delivery rates - **~57%**
+
+![Late Delivery Rates by Day of Week](../visualizations/late-delivery-rates-by-day-of-week.png)
+
+##### Month
+
+All months experience almost the same late delivery rates - **~57%**
+
+![Late Delivery Rates by Month](../visualizations/late-delivery-rates-by-month.png)
+
+##### Conclusion
+
+There seems to be no seasonal or day of week patterns in delivery delays.
+
 #### D3. Has shipping performance improved or deteriorated throughout the dataset period?
 
+To answer this question, I calculated and graphed the late delivery rates over time.
+
+With the chart, it is clear that late delivery rates have stayed mostly flat over time. And statistics confirm that:
+
+- The average late delivery rate is ~57%, with a standard deviation just below 1
+- The minimum late delivery rate a month has experienced is ~55%
+- The maximum late delivery rate a month has experiences is ~59%
+
+![Late Delivery Rates Over Time](../visualizations/late-delivery-rates-over-time.png)
+
 #### D4. Are there particular periods associated with increased operational inefficiencies?
+
+In D1 we saw that there has been a sudden spike of orders in the last 4 months that the dataset covers. In D3 we saw that late delivery rates stay consistent throughout the dataset.
+
+I calculated some statistics for late orders and these are the results:
+
+- The first 33 months have 952 orders with late deliveries on average
+- The last 4 months have 1159 orders with late deliveries on average
+
+This confirms that the last 4 months also get a spike in orders with late deliveries.
+
+However, the late delivery rates stay mostly flat, therefore I wouldn't say that there has been an increase in operational inefficiencies.
 
 ### E. Financial Performance
 
@@ -275,9 +328,6 @@ The highest difference in share of revenue and share of profit is in the Footwea
 #### E5. Which customer segments contribute most to revenue and profit?
 
 ## 8. Conclusions
-
-<!-- Answer the five research questions from section 4, drawing on the subsections above.
-Refer back to them (e.g. "see A2, A4") instead of repeating the numbers. -->
 
 ### 8.1 Which areas should management investigate first?
 

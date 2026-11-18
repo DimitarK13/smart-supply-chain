@@ -71,7 +71,6 @@ To answer these questions, the analysis will investigate five areas:
 
 - Which markets generate the highest sales and profits?
 - Which product categories are the most profitable?
-- Is there an association between delivery delays and profitability?
 - How do discounts affect profit margins?
 - Which customer segments contribute most to revenue and profit?
 
@@ -321,11 +320,9 @@ However, the late delivery rates stay mostly flat, therefore I wouldn't say that
 
 #### E2. Which product categories are the most profitable?
 
-#### E3. Is there an association between delivery delays and profitability?
+#### E3. How do discounts affect profit margins?
 
-#### E4. How do discounts affect profit margins?
-
-#### E5. Which customer segments contribute most to revenue and profit?
+#### E4. Which customer segments contribute most to revenue and profit?
 
 ## 8. Conclusions
 

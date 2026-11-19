@@ -392,7 +392,24 @@ Europe and LATAM bring the majority of the profit, therefore protecting those ma
 
 ### 8.4 Are there opportunities to improve profitability?
 
+The analysis found few opportunities to improve profitability by fixing weak areas, because there are no clearly weak areas. Profit follows revenue almost everywhere:
+
+- **Departments:** no department has high sales but low profitability. (C4)
+- **Customer segments:** Consumer, Corporate and Home Office have almost identical shares of revenue and profit (E4).
+- **Markets:** each market's share of profit is close to its share of revenue (B4, E1).
+- **Pacfic Asia's smaller basket:** orders contain fewer items (2.35 compared to around 3 for other markets).
+
+This means the differences in profit between departments, segments and markets come from how much they sell, not from how profitably they sell it.
+
+This analysis also cannot answer how discounts affect profit margins. (E3)
+
+The main opportunity is therefore growth in the areas that already bring the most profit: the Fan Shop and Apparel departments (C3), the Fishing and Cleats categories (E2), the Consumer segment (E4), and the Europe and LATAM markets (B4).
+
 ### 8.5 What operational changes would you recommend?
+
+1.  **Treat late deliveries as a company-wide process problem.** About 57% of orders arrive late, and this rate is almost the same across markets (B3), regions (B1), product categories (C2), days of the week and months (D2), and has not changed over three years (D3). The cause is unlikely to be local, so fixes should target the shipping process as a whole rather than individual markets.
+2.  **Start with Second Class.** It has the second-highest late-delivery rate (79.99%) and the longest average delay among late orders (2.5 days) (A2, A3), and it stays at this level every month (A4).
+3.  **Track the late-delivery rate per shipping mode every month.**
 
 ## 9. Limitations
 

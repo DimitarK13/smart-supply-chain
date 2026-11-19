@@ -316,13 +316,57 @@ However, the late delivery rates stay mostly flat, therefore I wouldn't say that
 
 ### E. Financial Performance
 
+Source: `notebooks/07-financial-performance-analysis.ipynb`
+
 #### E1. Which markets generate the highest sales and profits?
+
+The research supporting this question was done in B4. Here are the raw numbers:
+
+1. Europe - $1,131,938 in profits, $10,405,371 in revenue
+2. LATAM - $1,069,051 in profits, $9,824,330 in revenue
+3. Pacific Asia - $826,167 in profits, $7,942,352 in revenue
+4. USCA - $539,223 in profits, $4,836,414 in revenue
+5. Africa - $240,041 in profits, $2,205,963 in revenue
 
 #### E2. Which product categories are the most profitable?
 
+To answer this question, I grouped product categories, and calculated their profits. Besides their profits, I calculated their share of the overall profit.
+
+1. Fishing: $731,576 (19.22% of global profit)
+2. Cleats: $474,630 (12.47% of global profit)
+3. Camping & Hiking: $409,896 (10.77% of global profit)
+4. Cardio Equipment: $362,985 (9.54% of global profit)
+5. Women's Apparel: $334,336 (8.78% of global profit)
+
+![Profit Share by Product Category](../visualizations/profit-share-by-product-category.png)
+
 #### E3. How do discounts affect profit margins?
 
+This question required a bit more work, and the results weren't as expected.
+
+To answer it, I grouped the data into discount rates (all discounts available in the dataset, ranging from 0-25%). I then calculated profit, revenue, number of items, how many items were sold at a loss, and the profit margin for each group.
+
+##### Results
+
+Across all discount rates, the margin stays between 11.1% and 12.95%. There doesn't seem to be a trend in neighbouring levels, since they go both up and down, and it looks more like noise.
+
+Across all discount rates, the share of how many items were sold at a loss also stays relatively similar. If discounts were pushing items below their cost, this share would rise as discounts rise.
+
+The real cost of discounting is not visible in the dataset. That, and the similar number of items in all discount rates (~9,600), is just more evidence that the data might be synthetic, as mentioned before.
+
+Therefore, this analysis **cannot** answer how discounts affect profit margins.
+
+![Profit Margin by Discount Rate](../visualizations/profit-margin-by-discount-rate.png)
+
 #### E4. Which customer segments contribute most to revenue and profit?
+
+There are only 3 customer segments in this dataset, and they align quite evenly in the profit and revenue shares.
+
+1. Consumer: $1,982,864 (52.09% of global profit); $16,417,550 (51.88% of global revenue)
+2. Corporate: $1,157,821 (30.42% of global profit); $9,621,052 (30.40% of global revenue)
+3. Home Office: $665,736 (17.49% of global profit); $5,606,064 (17.72% of global revenue)
+
+![Profit and Revenue Share by Customer Segment](../visualizations/profit-and-revenue-share-by-customer-segment.png)
 
 ## 8. Conclusions
 

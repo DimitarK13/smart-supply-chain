@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to evaluate shipping performance, identify operational inefficiencies, and investigate how shipping delays relate to sales and profitability.
+This project aims to evaluate shipping performance, identify operational inefficiencies, and investigate opportunities to improve profitability.
 
 ## Setup
 
